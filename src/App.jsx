@@ -1,4 +1,5 @@
 import "./App.css";
+import Artists from "./features/components/Artists";
 import BucketList from "./features/components/BucketList";
 import BucketListWithImmer from "./features/components/BucketListWIthImmer";
 import Greeting from "./features/components/createElement";
@@ -6,6 +7,7 @@ import Editable from "./features/components/Editable";
 import Form from "./features/components/Form";
 import Gallery from "./features/components/Gallery";
 import Immer from "./features/components/immer";
+import Todos from "./features/components/Todos";
 import Toolbar from "./features/components/toolbar";
 
 function App() {
@@ -40,6 +42,14 @@ function App() {
       <hr />
       <br />
       <Greeting name={"Farzin"} />
+      <br />
+      <hr />
+      <br />
+      <Artists />
+      <br />
+      <hr />
+      <br />
+      <Todos />
     </div>
   );
 }
