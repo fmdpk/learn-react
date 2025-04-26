@@ -1,6 +1,7 @@
 import "./App.css";
 import BucketList from "./features/components/BucketList";
 import BucketListWithImmer from "./features/components/BucketListWIthImmer";
+import Greeting from "./features/components/createElement";
 import Editable from "./features/components/Editable";
 import Form from "./features/components/Form";
 import Gallery from "./features/components/Gallery";
@@ -35,6 +36,10 @@ function App() {
       <hr />
       <br />
       <Form />
+      <br />
+      <hr />
+      <br />
+      <Greeting name={"Farzin"} />
     </div>
   );
 }
