@@ -7,6 +7,7 @@ import Editable from "./features/components/Editable";
 import Form from "./features/components/Form";
 import Gallery from "./features/components/Gallery";
 import Immer from "./features/components/immer";
+import TasksApp from "./features/components/TasksApp";
 import Todos from "./features/components/Todos";
 import Toolbar from "./features/components/toolbar";
 
@@ -50,6 +51,10 @@ function App() {
       <hr />
       <br />
       <Todos />
+      <br />
+      <hr />
+      <br />
+      <TasksApp />
     </div>
   );
 }

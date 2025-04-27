@@ -3,11 +3,17 @@ import { useState } from "react";
 export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   return (
     <ul>
-      {todos.map((todo) => (
-        <li key={todo.id}>
-          <Task todo={todo} onChange={onChangeTodo} onDelete={onDeleteTodo} />
-        </li>
-      ))}
+      {todos
+        ? todos.map((todo) => (
+            <li key={todo.id}>
+              <Task
+                todo={todo}
+                onChange={onChangeTodo}
+                onDelete={onDeleteTodo}
+              />
+            </li>
+          ))
+        : "There are no tasks"}
     </ul>
   );
 }
