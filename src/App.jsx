@@ -10,6 +10,7 @@ import Immer from "./features/components/immer";
 import TasksApp from "./features/components/TasksApp";
 import Todos from "./features/components/Todos";
 import Toolbar from "./features/components/toolbar";
+import VideoPlayer from "./features/components/VideoPlayer";
 
 function App() {
   return (
@@ -55,6 +56,10 @@ function App() {
       <hr />
       <br />
       <TasksApp />
+      <br />
+      <hr />
+      <br />
+      <VideoPlayer />
     </div>
   );
 }
